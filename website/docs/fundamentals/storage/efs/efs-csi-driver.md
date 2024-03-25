@@ -56,6 +56,7 @@ Now we'll get and describe the StorageClass using the below commands. Notice tha
 ```bash
 $ kubectl get storageclass
 NAME            PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+gp2 (default)   kubernetes.io/aws-ebs   Delete          WaitForFirstConsumer   false                  4h46m
 efs-sc          efs.csi.aws.com         Delete          Immediate              false                  8m29s
 $ kubectl describe sc efs-sc
 Name:            efs-sc
